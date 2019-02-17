@@ -1,0 +1,78 @@
+﻿<phone:PhoneApplicationPage x:Class="BabyFeed.View.TimerPage"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:local="clr-namespace:BabyFeed" 
+                            xmlns:converters="clr-namespace:BabyFeed.Converters" 
+                            xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+                            mc:Ignorable="d"
+                            d:DesignWidth="480"
+                            d:DesignHeight="696"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            Orientation="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            DataContext="{Binding TimerModel, Source={StaticResource Locator}}"
+                            toolkit:TiltEffect.IsTiltEnabled="True" Loaded="PhoneApplicationPage_Loaded">
+
+    <Grid x:Name="LayoutRoot"
+          Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel"
+                    Grid.Row="0"
+                    Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle"
+                       Text="{Binding Title}"
+                       Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBlock x:Name="PageTitle"
+                       Text="timed event"
+                       Margin="9,-7,0,0"
+                       Style="{StaticResource PhoneTextTitle1Style}" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel"
+              Grid.Row="1"
+              Margin="12,0">
+        	<Grid.RowDefinitions>
+        		<RowDefinition Height="218"/>
+        		<RowDefinition Height="Auto" MinHeight="317"/>
+        	</Grid.RowDefinitions>
+        	<Grid Margin="0">
+        		<Grid.RowDefinitions>
+        			<RowDefinition Height="Auto"/>
+        			<RowDefinition Height="24"/>
+        			<RowDefinition Height="Auto"/>
+        		</Grid.RowDefinitions>
+        		<Grid.ColumnDefinitions>
+        			<ColumnDefinition/>
+        		</Grid.ColumnDefinitions>
+        		<TextBlock Margin="12,0,0,-1" TextWrapping="Wrap" Text="SECS" Grid.Row="1" HorizontalAlignment="Left" d:LayoutOverrides="Height" FontSize="18.667"/>
+        		<TextBlock Margin="8,0,0,0" TextWrapping="Wrap" Text="{Binding Time, Mode=TwoWay}" FontSize="96" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        		<TextBlock Margin="8,-10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Secs, Mode=TwoWay}" VerticalAlignment="Top" FontSize="48" HorizontalAlignment="Left"/>
+        	</Grid>
+        	<StackPanel Margin="12,0" Grid.RowSpan="2" Grid.Row="1">
+        		<TextBlock Margin="0" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Text="event type"/>
+        		<toolkit:ListPicker Margin="0" ItemsSource="{Binding EventTypes}"/>
+        	</StackPanel></Grid>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="StartBtn" IconUri="/icons/appbar.transport.play.rest.png" Text="start" Click="StartBtn_Click"/>
+            <shell:ApplicationBarIconButton x:Name="PauseBtn" IconUri="/icons/appbar.transport.pause.rest.png" Text="pause" Click="PauseBtn_Click"/>
+            <shell:ApplicationBarIconButton x:Name="SaveBtn" IconUri="/icons/appbar.save.rest.png" Text="save" Click="SaveBtn_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

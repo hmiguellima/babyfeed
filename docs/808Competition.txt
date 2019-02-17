@@ -1,0 +1,116 @@
+{{Note|This is an entry in the [[Symbian Qt Quick Components Competition 2012Q1]]}}
+{{Abstract|This article explains how I've ported my app BabyFeed to QtQuick components from QWidgets}} 
+
+{{ArticleMetaData <!-- v1.2 -->
+|sourcecode= <!-- Link to example source code e.g. [[Media:The Code Example ZIP.zip]] -->
+|installfile= <!-- Link to installation file (e.g. [[Media:The Installation File.sis]]) -->
+|devices= <!-- Devices tested against - e.g. ''devices=Nokia 6131 NFC, Nokia C7-00'') -->
+|sdk= <!-- SDK(s) built and tested against (e.g. [http://linktosdkdownload/ Qt SDK 1.1.4]) -->
+|platform=Symbian^3 <!-- Compatible platforms - e.g. Symbian^1 and later, Qt 4.6 and later -->
+|devicecompatability= <!-- Compatible devices e.g.: All* (must have internal GPS) -->
+|dependencies= <!-- Any other/external dependencies e.g.: Google Maps Api v1.0 --> 
+|signing=<!-- Signing requirements - empty or one of: Self-Signed, DevCert, Manufacturer -->
+|capabilities= <!-- Capabilities required by the article/code example (e.g. Location, NetworkServices. -->
+|keywords=QML, Qt<!-- APIs, classes and methods (e.g. QSystemScreenSaver, QList, CBase -->
+|language= <!-- Language category code for non-English topics - e.g. Lang-Chinese -->
+|translated-by= <!-- [[User:XXXX]] -->
+|translated-from-title= <!-- Title only --> 
+|translated-from-id= <!-- Id of translated revision -->
+|review-by=<!-- After re-review: [[User:username]] -->
+|review-timestamp= <!-- After re-review: YYYYMMDD -->
+|update-by= <!-- After significant update: [[User:username]]-->
+|update-timestamp= <!-- After significant update: YYYYMMDD -->
+|creationdate=20120301 <!-- Format YYYYMMDD -->
+|author= [[User:hugolima]]<!-- Display as link [[User:username]] -->
+}}
+
+== Introduction ==
+
+Hi, my name is Hugo Lima, and I'm writing this article to explain the process I've used to port my existing app BabyFeed - Baby Agenda, on sale at the Nokia Store, from being based on QWidgets to using QML and QtQuick UI components.
+
+The first version of BabyFeed was created with Qt 4.6.3 for S60 5th edition devices, and at time there where no QML, and I had to use an UI based on QWidgets, this was a bit difficult because QWidgets are more adequate to Desktop UI's, and have some quirks in Mobile. 
+
+Nonetheless, i went forward, but used a software architecture based on a MVC (Model-View-Controller) model, basically this means that all my app's business and persistence logic were separated from the view implementation. This was a boon, because it allowed me to latter port it more easily to other view implementations, being the first a QML version for the Nokia N9 Meego Harmattan device.
+
+The core of the architecture was the controller part, in here i used a number of classes that had a reference to a corresponding view interface with methods to change the UI elements and get results from it. This controller classes communicated with each other by the way of an event bus type communication, registering for events and acting on them.
+
+== QtQuick Components ==
+
+For the Symbian version I used Qt 4.7.4 with Mobility 1.2 and QtQuick Components 1.1, the main part of the job was basically recreating all of the UI code to QML.
+
+The app basically loads a main.qml file into a QDeclarativeView, this main file uses the PageStackWindow component and implements all of the auxiliary elements like the Splash screen, the main app styles, the main menus, standard dialogs etc, and has javascript function "showScreen" that is called from the controller C++ side to dinamically load all the app's screens from other QML files.
+
+The core components used here were:
+*PageStackWindow - to serve as the pages placeholder
+*Menu -  to build the app's menus
+*QueryDialog - Message boxes 
+*BusyIndicator - For wait boxes shown during long processing tasks
+
+And had to develop some custom components:
+*Splash - Component for the splash screen (Uses a Sequential animation for the fade out effect)
+*Styles - This component was a place holder for common styles used in the application, like different text and graphics sizes, and default spacing.
+
+== Main page ==
+The main app's page was in a file named mainpage.qml, that has a structure similar to the other pages, in that it has a top title panel, followed by a central content area, and a toolbar at the bottom.
+
+The core components used here were:
+*Page - Container
+*Image - For the background
+*ToolButton - for calendar navigation
+*ListView - To display the day's events
+*ToolBarLayout - for the bottom toolbar
+*DatePickerDialog - to help the user pick the selected date
+
+Meanwhile I had to also build a custom component that was very important, this was the baby selector component next to the title panel.
+The baby selector component, had to be custom made because it needed to be a flickable area that allows the user to switch between different babies.
+To create a new baby the user simply flicks this component to the right until it reaches the end.
+
+== Baby page ==
+
+This is the page were the user creates and edits the baby's information, like the name, photo, birthday, sex, and also defines the alarm preferences and also the contacts to receive SMS notifications.
+
+The core components used here were:
+*TabBarLayout/TabGroup - top tabs at the top to switch between info, alarms and contacts.
+*Dialog/Camera - To capture the baby photo.
+*ListView - to list the contacts from the phone
+*ToolBarLayout - for the bottom toolbar with a back button at the left and a save button at the right. 
+
+== Chronometer page ==
+
+You go to this page by clicking on the chronometer icon on the main screen's bottom tool bar.
+
+This page allows the mother to time a feeding session, and assign the type of feeding used in the session. The design used in this page meant to resemble a stopwatch with a start/stop button and big digits.
+
+== Custom event / edit event page ==
+
+You go to this page by clicking on a event from the list of events, or by clicking on the event button at the main page toolbar.
+
+This page uses a similar layout to the Baby page.
+
+== Charts/Statistics page ==
+
+You go to this page by clicking on the chart shaped icon at the main page toolbar.
+
+This page has a similar behaviour to the baby selector but instead switches between dinamically generated graphic images. For the charts rendering I used an open source library called QWT. Being a C++ lib, the speed was excellent and it worked like a charm.  
+
+== App design ==
+
+All of the app's design elements were based on simplicity and ease of use, and this includes the icons used to describe the event types and baby actions.
+
+== Screenshots ==
+
+<gallery caption="Gallery caption">
+File:babyfeed_history.jpg
+File:babyfeed_file_notf.jpg
+File:babyfeed_timer.jpg
+File:babyfeed_event_notes.jpg
+File:babyfeed_file_alarms.jpg
+</gallery>
+ 
+== Summary ==
+
+My conclusion is that using QtQuick components and QML made the development of the UI a lot easier than before and I liked that a lot.
+
+You can grab a copy of BabyFeed for Symbian^3 devices at http://store.ovi.com/content/94957 (ps. the store has both the old version for S60 5th edition devices that don't support QtQuick components and the QML version for newer devices).
+
+[[Category:Qt Quick]]

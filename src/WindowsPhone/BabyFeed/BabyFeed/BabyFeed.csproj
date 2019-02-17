@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B15479E2-4652-450B-8685-2EFCAEE1ED43}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BabyFeed</RootNamespace>
+    <AssemblyName>BabyFeed</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>en;pt</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>BabyFeed.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>BabyFeed.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.WP71">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\WP71\GalaSoft.MvvmLight.WP71.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WP71">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\WP71\GalaSoft.MvvmLight.Extras.WP71.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <HintPath>..\packages\SilverlightToolkitWP.4.2012.6.25\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Windows.Interactivity">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\WP71\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="Telerik.Windows.Controls.Chart, Version=2012.3.1029.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Input, Version=2012.3.1029.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Primitives, Version=2012.3.1029.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Core, Version=2012.3.1029.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppResx.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\Bool2VisibilityConverter.cs" />
+    <Compile Include="Converters\ImageConverter.cs" />
+    <Compile Include="Converters\StepTitleConverter.cs" />
+    <Compile Include="Design\DesignDataService.cs" />
+    <Compile Include="Domain\BabiesList.cs" />
+    <Compile Include="Domain\BabyEventGroup.cs" />
+    <Compile Include="Domain\NapEvent.cs" />
+    <Compile Include="Events\BabySavedEvent.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="Provider\INavigationService.cs" />
+    <Compile Include="Provider\WPNavigationService.cs" />
+    <Compile Include="Utils\FrameworkElementExtensions.cs" />
+    <Compile Include="ViewModel\BabyViewModel.cs" />
+    <Compile Include="ViewModel\ChartsViewModel.cs" />
+    <Compile Include="ViewModel\MedicineStepViewModel.cs" />
+    <Compile Include="ViewModel\NotesStepViewModel.cs" />
+    <Compile Include="ViewModel\EventsViewModel.cs" />
+    <Compile Include="ViewModel\EventViewModel.cs" />
+    <Compile Include="ViewModel\IValidableContent.cs" />
+    <Compile Include="ViewModel\TimerViewModel.cs" />
+    <Compile Include="ViewModel\WhatStepViewModel.cs" />
+    <Compile Include="ViewModel\WhenStepViewModel.cs" />
+    <Compile Include="ViewModel\Wizard.cs" />
+    <Compile Include="ViewModel\WizardStep.cs" />
+    <Compile Include="View\BabyPage.xaml.cs">
+      <DependentUpon>BabyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChartsPage.xaml.cs">
+      <DependentUpon>ChartsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DynamicContentControl.cs" />
+    <Compile Include="View\EventPage.xaml.cs">
+      <DependentUpon>EventPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventsPage.xaml.cs">
+      <DependentUpon>EventsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\Baby.cs" />
+    <Compile Include="Domain\BFeedingEvent.cs" />
+    <Compile Include="Domain\DataItem.cs" />
+    <Compile Include="Provider\SqlDataService.cs" />
+    <Compile Include="Domain\EmptyEvent.cs" />
+    <Compile Include="Domain\Event.cs" />
+    <Compile Include="Domain\FeedingEvent.cs" />
+    <Compile Include="Provider\IAlarmService.cs" />
+    <Compile Include="Provider\IDataService.cs" />
+    <Compile Include="Provider\IEmailService.cs" />
+    <Compile Include="Domain\LFeedingEvent.cs" />
+    <Compile Include="Domain\MeasureEvent.cs" />
+    <Compile Include="Domain\MedicineEvent.cs" />
+    <Compile Include="Domain\NoBaby.cs" />
+    <Compile Include="Domain\PottyEvent.cs" />
+    <Compile Include="Domain\RFeedingEvent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="Converters\ShortDateConverter.cs" />
+    <Compile Include="View\TimerPage.xaml.cs">
+      <DependentUpon>TimerPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\appbar.add.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.back.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.next.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.save.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.transport.pause.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.transport.play.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\baby_add.png" />
+    <Content Include="icons\baby_bottle.png" />
+    <Content Include="icons\baby_bottle_checked.png" />
+    <Content Include="icons\baby_boy_icon.png" />
+    <Content Include="icons\baby_girl_icon.png" />
+    <Content Include="icons\baby_sleep.png" />
+    <Content Include="icons\baby_sleep_checked.png" />
+    <Content Include="icons\breastfeeding-left.png" />
+    <Content Include="icons\breastfeeding-left_checked.png" />
+    <Content Include="icons\breastfeeding-right.png" />
+    <Content Include="icons\breastfeeding-right_checked.png" />
+    <Content Include="icons\nappy.png" />
+    <Content Include="icons\nappy_checked.png" />
+    <Content Include="icons\Pills.png" />
+    <Content Include="icons\Pills_checked.png" />
+    <Content Include="icons\weight.png" />
+    <Content Include="icons\weight_checked.png" />
+    <Content Include="icons\appbar.calendar.14.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.timer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="icon_small.png" />
+    <Resource Include="icon_tile.png" />
+    <Content Include="Images\baby1.jpeg" />
+    <Content Include="Images\baby2.jpeg" />
+    <Content Include="Images\baby3.jpeg" />
+    <Content Include="Images\baby4.jpeg" />
+    <Content Include="SplashScreenImage.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppResx.pt.resx" />
+    <EmbeddedResource Include="AppResx.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResx.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\BabyPage.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChartsPage.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EventPage.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EventsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainPage.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TimerPage.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\timer_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\new_event_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\chart_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

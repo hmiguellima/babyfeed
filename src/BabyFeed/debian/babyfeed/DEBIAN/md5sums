@@ -1,0 +1,17 @@
+cf3d5554d4129988764bc93b2694ec08  icons/hicolor/64x64/apps/babyfeed64.png
+65752f61fe117980a945d6e8beeef7f5  icons/hicolor/80x80/apps/babyfeed80.png
+77ed653e74745716823dddd86dd49980  opt/babyfeed/bin/babyfeed
+37b711aeb3e4c6cc471a7f25a80dd1a0  opt/babyfeed/qml/BabyFeedMeego/BabyPage.qml
+fbb901c98c9dc713372212a3ac42264b  opt/babyfeed/qml/BabyFeedMeego/BabyPages.qml
+fce794e1cabe9c84d8708e62bd75230d  opt/babyfeed/qml/BabyFeedMeego/CheckInOutPage.qml
+f81731ff3ba74c29b5eb984158de5664  opt/babyfeed/qml/BabyFeedMeego/Main.qml
+148e279f5b0b09375fc72ad9f78367ed  opt/babyfeed/qml/BabyFeedMeego/MainPage.qml
+bfb3fc957cca080c513d1cf79bdc7cec  opt/babyfeed/qml/BabyFeedMeego/ManualEventPage.qml
+36c15ebf04b2180348d68840e365cfb6  opt/babyfeed/qml/BabyFeedMeego/PageTitle.qml
+e8a38de92f4f6a1fe8204727a025c491  opt/babyfeed/qml/BabyFeedMeego/ReportsPage.qml
+ab95ac983c013c073017c1ae7dd6b136  opt/babyfeed/qml/BabyFeedMeego/Splash.qml
+aa91dbb1bb8833dc702419e1ef0bd487  opt/babyfeed/qml/BabyFeedMeego/Styles.qml
+4838ec1160e9e49ccda7185ba25f92d8  usr/share/applications/babyfeed.desktop
+474d08be7e79e0e127a5e7315f5eb8c8  usr/share/doc/babyfeed/changelog.gz
+3713115c280690e76516e60b7ea8cf0b  usr/share/doc/babyfeed/copyright
+65752f61fe117980a945d6e8beeef7f5  usr/share/icons/hicolor/80x80/apps/babyfeed80.png

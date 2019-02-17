@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/office-calendar.svg</file>
+        <file>icons/accessories-text-editor.svg</file>
+        <file>icons/appointment-new.svg</file>
+        <file>icons/document-save.svg</file>
+        <file>icons/edit-delete.svg</file>
+        <file>icons/edit-undo.svg</file>
+        <file>icons/media-playback-stop.svg</file>
+        <file>icons/media-record.svg</file>
+        <file>icons/breastfeeding-icon.jpg</file>
+        <file>icons/baby_icon.jpg</file>
+        <file>icons/new_baby_icon.jpg</file>
+        <file>icons/breastfeeding-right.png</file>
+        <file>icons/baby_bottle.png</file>
+        <file>icons/breastfeeding-left.png</file>
+        <file>icons/x-office-spreadsheet.svg</file>
+        <file>icons/Pills.png</file>
+        <file>icons/baby_bottle_checked.png</file>
+        <file>icons/breastfeeding-right_checked.png</file>
+        <file>icons/breastfeeding-left_checked.png</file>
+        <file>icons/Pills_checked.png</file>
+        <file>icons/transparent.png</file>
+        <file>icons/internet-mail.png</file>
+    </qresource>
+</RCC>

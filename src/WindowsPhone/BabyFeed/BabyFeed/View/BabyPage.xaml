@@ -1,0 +1,89 @@
+﻿<phone:PhoneApplicationPage
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls" 
+                            xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+                            xmlns:local="clr-namespace:BabyFeed" 
+                            xmlns:conv="clr-namespace:BabyFeed.Converters" 
+                            xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:GalaSoft_MvvmLight_Command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WP71" 
+                            x:Class="BabyFeed.View.BabyPage" 
+                            mc:Ignorable="d"
+                            d:DesignWidth="480"
+                            d:DesignHeight="696"
+                            SupportedOrientations="Portrait"
+                            Orientation="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            DataContext="{Binding BabyModel, Source={StaticResource Locator}}"
+                            toolkit:TiltEffect.IsTiltEnabled="True"
+                            >
+
+	<phone:PhoneApplicationPage.Resources>
+        <conv:Bool2VisibilityConverter x:Key="boolConv" FalseVisibility="Collapsed"/>
+		<local:LocalizedStrings x:Key="Resx" d:IsDataSource="True"/>
+        <conv:ImageConverter x:Key="imgConv"/>
+	</phone:PhoneApplicationPage.Resources>
+
+	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton x:Name="SaveBtn" IconUri="/icons/appbar.save.rest.png" Text="save" IsEnabled="False" Click="SaveBtn_Click" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+	    <controls:Pivot Margin="0" Title="{Binding Title}" d:LayoutOverrides="GridBox">
+	    	<controls:PivotItem>
+	    		<controls:PivotItem.Header>
+	    			<TextBlock Text="{Binding Strings.baby, Source={StaticResource Resx}}" />
+				</controls:PivotItem.Header>
+	    		<ScrollViewer>
+	    			<StackPanel Orientation="Vertical" Margin="0">
+	    				<Image x:Name="babyPhoto" Height="156" Margin="12,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="185" Source="{Binding Photo, Converter={StaticResource imgConv}}" Stretch="UniformToFill">
+	    					<i:Interaction.Triggers>
+	    						<i:EventTrigger EventName="MouseLeftButtonDown">
+	    							<GalaSoft_MvvmLight_Command:EventToCommand Command="{Binding CapturePhotoCommand}"/>
+	    						</i:EventTrigger>
+	    					</i:Interaction.Triggers>
+	    				</Image>
+	    				<TextBlock HorizontalAlignment="Left" Margin="12,12,0,0" TextWrapping="Wrap" Text="{Binding Strings.name, Source={StaticResource Resx}}" VerticalAlignment="Top" Style="{StaticResource PhoneTextSubtleStyle}"/>
+	    				<TextBox TextWrapping="Wrap" Text="{Binding Name, Mode=TwoWay}"/>
+	    				<TextBlock HorizontalAlignment="Left" Margin="12,0,0,12" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#99FF0000" Text="Please enter the baby's name" Visibility="{Binding IsNameInvalid, Converter={StaticResource boolConv}, Mode=OneWay}"/>
+	    				<TextBlock HorizontalAlignment="Left" Margin="12,12,0,0" TextWrapping="Wrap" Text="{Binding Strings.gender, Source={StaticResource Resx}}" VerticalAlignment="Top" FontSize="{StaticResource PhoneFontSizeNormal}" Style="{StaticResource PhoneTextSubtleStyle}"/>
+	    				<toolkit:ListPicker Margin="12,6,12,0" ItemsSource="{Binding Genders}" SelectedIndex="{Binding GenderIndex, Mode=TwoWay}"/>
+	    				<TextBlock HorizontalAlignment="Left" Margin="12,12,0,0" TextWrapping="Wrap" Text="{Binding Strings.birthday, Source={StaticResource Resx}}" VerticalAlignment="Top" FontSize="{StaticResource PhoneFontSizeNormal}" Style="{StaticResource PhoneTextSubtleStyle}"/>
+	    				<toolkit:DatePicker Value="{Binding BirthDay, Mode=TwoWay}"/>
+	    			</StackPanel>
+	    		</ScrollViewer>
+	    	</controls:PivotItem>
+	    	<controls:PivotItem Margin="16,31,8,-3">
+	    		<controls:PivotItem.Header>
+	    			<TextBlock Text="{Binding Strings.alarms, Source={StaticResource Resx}}"/>
+				</controls:PivotItem.Header>
+	    		<ScrollViewer>
+	    			<StackPanel Orientation="Vertical" Margin="0">
+	    				<CheckBox Content="enable timer alarms" IsChecked="{Binding EnableTimerAlarms, Mode=TwoWay}"/>
+	    				<TextBlock HorizontalAlignment="Left" Margin="12,12,0,0" TextWrapping="Wrap" Text="{Binding Strings.minutes_between_feeds, Source={StaticResource Resx}}"  VerticalAlignment="Top" Style="{StaticResource PhoneTextSubtleStyle}"/>
+	    				<TextBox TextWrapping="Wrap" InputScope="Number" Text="{Binding MinutesBetweenFeeds, Mode=TwoWay}"/>
+	    			</StackPanel>
+	    		</ScrollViewer>
+	    	</controls:PivotItem>
+	    </controls:Pivot>
+	</Grid>
+
+</phone:PhoneApplicationPage>

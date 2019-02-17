@@ -1,0 +1,239 @@
+MainWindow #centralwidget {
+	background-image: url(:/resources/resources/main_screen_bgr.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+MainScreen #babyContainer {
+	background-color: rgb(225, 225, 225);
+}
+
+BabyIcon {
+	padding-left:10px;
+	padding-right: 20px;
+	background-image: url(:/resources/resources/baby_btn_handle.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+QLabel {
+	color: rgb(0, 0, 0);
+}
+
+BabyIcon, BabyIcon:checked, BabyIcon:pressed, QPushButton, QToolButton, LabelBar {
+	background-color: qlineargradient(spread:pad, y1:0.318, x1:0, y2:1, x2:0, stop:0 rgba(225, 225, 225, 255), stop:1 rgba(117, 117, 255, 255));
+	border-color: rgb(103, 67, 125);
+	border-width: 2px;
+	border-style: solid;
+	color: rgb(0, 0, 0);
+	padding: 8px;
+}
+
+.QPushButton:checked, .QPushButton:pressed, .QToolButton:checked, .QToolButton:pressed {
+	background-color: rgb(186, 186, 255);
+	padding: 8px;
+}
+
+#checkInOutButton, #manualButton, #statsButton {
+	color: rgb(225, 225, 225);
+}
+
+QListView {
+	color: rgb(0, 0, 0);
+	font-size: 8pt;
+}
+
+/*
+MainScreen QListView {
+	background-position: top center;
+	background-image: url(:/resources/resources/main_screen_bgr.png);
+	background-repeat: no-repeat;
+}
+*/
+
+QTabWidget::pane { 
+	border-top: 2px solid #E4E0E0;
+	border-style: solid;
+	border-width: 1px;
+	background-color: rgba(0, 0, 0, 50);
+}
+
+QTabWidget::tab-bar {
+	left: 0px;
+}
+
+QTabBar::tab {
+	background-color: qlineargradient(spread:pad, y1:0.318, x1:0, y2:1, x2:0, stop:0 rgba(225, 225, 225, 255), stop:1 rgba(117, 117, 255, 255));
+ 	border: 2px solid rgb(121, 124, 121);
+	min-width: 8ex;
+	padding: 6px;
+	color: rgb(0, 0, 0);
+}
+
+QTabBar::tab:!selected {
+	padding: 6px;
+	margin-top: 2px; 
+	font-size: 5pt;
+}
+
+QTabBar::tab:selected {
+	margin-left: -4px;
+	margin-right: -4px;
+	font-size: 6pt;
+}
+
+QTabBar::tab:first:selected {
+	margin-left: 0;
+}
+
+QTabBar::tab:last:selected {
+	margin-right: 0;
+}
+
+QTabBar::tab:only-one {
+	margin: 0;
+}
+
+ManualEventScreen #scrollAreaWidgetContents_2 {
+	background-image: url(:/resources/resources/main_screen_bgr.png);
+}
+
+#kineticPagesContainer {
+	background-color: rgb(225, 225, 225);
+}
+
+QComboBox {
+  min-height: 30px;
+}
+
+QComboBox QAbstractItemView {
+	border: 2px solid darkgray;
+	padding: 0px;
+	background-color: rgb(225, 225, 225);
+	selection-background-color: lightgray;
+	font-size: 10pt;
+}
+
+QComboBox::drop-down {
+  subcontrol-origin: border;
+  subcontrol-position: top right; 
+  background-color: qlineargradient(spread:pad, y1:0.318, x1:0, y2:1, x2:0, stop:0 rgba(225, 225, 225, 255), stop:1 rgba(117, 117, 255, 255));
+  width: 40px; 
+  height: 28px;
+  border: 2px solid darkgray;
+}
+
+QComboBox::down-arrow {
+  image: url(:/icons/icons/down-arrow.png);
+  width: 15px;
+  height: 13px;
+}
+
+QDateTimeEdit, QSpinBox {
+  min-height: 30px;
+}
+
+QDateTimeEdit::up-button, QSpinBox::up-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right; /* position at the top right corner */
+  background-color: qlineargradient(spread:pad, y1:0.318, x1:0, y2:1, x2:0, stop:0 rgba(225, 225, 225, 255), stop:1 rgba(117, 117, 255, 255));
+  width: 40px; 
+  height: 28px;
+  border: 2px solid darkgray;
+}
+
+QDateTimeEdit::up-arrow, QSpinBox::up-arrow {
+  image: url(:/icons/icons/up-arrow.png);
+  width: 15px;
+  height: 13px;
+}
+
+QDateTimeEdit::up-arrow:disabled, QDateTimeEdit::up-arrow:off, QSpinBox::up-arrow:disabled, QSpinBox::up-arrow:off { /* off state when value is max */
+  image: url(:/icons/icons/up-arrow-disabled.png);
+}
+
+QDateTimeEdit::down-button, QSpinBox::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right; 
+  background-color: qlineargradient(spread:pad, y1:0.318, x1:0, y2:1, x2:0, stop:0 rgba(225, 225, 225, 255), stop:1 rgba(117, 117, 255, 255));
+  margin-right: 48px;
+  width: 40px; 
+  height: 28px;
+  border: 2px solid darkgray;
+}
+
+QDateTimeEdit::down-arrow, QSpinBox::down-arrow {
+  image: url(:/icons/icons/down-arrow.png);
+  width: 15px;
+  height: 13px;
+}
+
+QDateTimeEdit::down-arrow:disabled, QDateTimeEdit::down-arrow:off, QSpinBox::down-arrow:disabled, QSpinBox::down-arrow:off { /* off state when value in min */
+  image: url(:/icons/icons/down-arrow-disabled.png);
+}
+
+
+QMessageBox {
+	border: 2px solid darkgray;
+	background-color: rgb(225, 225, 225);
+	color: rgb(0, 0, 0);
+}
+
+BabyScreen #scrollAreaWidgetContents {
+	background-image: url(:/resources/resources/main_screen_bgr.png);
+}
+
+QLCDNumber {
+	color: rgb(0, 0, 0);
+}
+
+QCheckBox {
+  spacing: 4px;
+}
+
+QCheckBox::indicator {
+  width: 72px;
+  height: 32px;
+}
+
+QCheckBox::indicator:unchecked {
+  image: url(:/resources/resources/checkbox_off.png);
+}
+
+QCheckBox::indicator:checked {
+  image: url(:/resources/resources/checkbox_on.png);
+}
+
+QCheckBox::indicator:indeterminate {
+  image: url(:/resources/resources/checkbox_off.png);
+}
+
+QCalendarWidget QAbstractItemView {
+	selection-background-color: rgb(117, 117, 255);
+	selection-color: rgb(255, 255, 255);
+	background-color: rgb(215, 215, 215);
+	color: rgb(255, 255, 255);
+}
+
+QFileDialog {
+	border: 2px solid darkgray;
+	background-color: rgb(225, 225, 225);
+	color: rgb(0, 0, 0);
+}
+
+#ReportPages * {
+  color: rgb(0, 0, 0);
+	font-size: 5pt;
+}
+
+#ReportPages QFrame {
+  background-color: rgb(255, 255, 255);
+}
+
+#ReportPages QwtPlotCanvas {
+  background-color: rgb(225, 225, 225);
+}
+
+DatePickerDialog, BusyDialog {
+  background-color: rgb(225, 225, 225);
+}

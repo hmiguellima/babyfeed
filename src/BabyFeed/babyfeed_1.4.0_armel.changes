@@ -1,0 +1,23 @@
+Format: 1.8
+Date: Sun, 15 Jan 2012 16:48:52 +0000
+Source: babyfeed
+Binary: babyfeed
+Architecture: armel
+Version: 1.4.0
+Distribution: unstable
+Urgency: low
+Maintainer: unknown <>
+Changed-By: unknown <>
+Description: 
+ babyfeed   - Baby Feed - Baby Agenda
+Changes: 
+ babyfeed (1.4.0) unstable; urgency=low
+ .
+   * <Add change description here>
+Checksums-Sha1: 
+ bfbae606835e4d5b2fef831364b8c4775b50d190 773662 babyfeed_1.4.0_armel.deb
+Checksums-Sha256: 
+ 6be73922b84521f5963f88f2acb4519a3a79a13c2178860f5e969079e50f6199 773662 babyfeed_1.4.0_armel.deb
+Files: 
+ c1bb265615e70386090ad514f70ee356 773662 user/other optional babyfeed_1.4.0_armel.deb
+Maemo-Display-Name: Baby Feed

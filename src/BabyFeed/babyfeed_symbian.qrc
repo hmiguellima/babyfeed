@@ -1,0 +1,66 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/breastfeeding-right.png</file>
+        <file>icons/baby_bottle.png</file>
+        <file>icons/breastfeeding-left.png</file>
+        <file>icons/Pills.png</file>
+        <file>icons/baby_bottle_checked.png</file>
+        <file>icons/breastfeeding-right_checked.png</file>
+        <file>icons/breastfeeding-left_checked.png</file>
+        <file>icons/Pills_checked.png</file>
+        <file>icons/transparent.png</file>
+        <file>icons/internet-mail.png</file>
+        <file>icons/nappy.png</file>
+        <file>icons/nappy_checked.png</file>
+        <file>icons/new_baby_icon.png</file>
+        <file>icons/baby_boy_icon.png</file>
+        <file>icons/baby_girl_icon.png</file>
+        <file>icons/leftarrowcue.png</file>
+        <file>icons/rightarrowcue.png</file>
+        <file>icons/weight.png</file>
+        <file>icons/weight_checked.png</file>
+        <file>icons/camera-photo.png</file>
+        <file>icons/up-arrow.png</file>
+        <file>icons/down-arrow.png</file>
+        <file>icons/down-arrow-disabled.png</file>
+        <file>icons/up-arrow-disabled.png</file>
+        <file>icons/babyfeed_48_icon.png</file>
+        <file>icons/timer-symbian.svg</file>
+        <file>icons/accessories-text-editor-symbian.svg</file>
+        <file>icons/x-office-spreadsheet-symbian.svg</file>
+        <file>icons/close-symbian.svg</file>
+    </qresource>
+    <qresource prefix="/tr">
+        <file>babyfeed_pt.qm</file>
+        <file>babyfeed_fr.qm</file>
+        <file>babyfeed_es.qm</file>
+    </qresource>
+    <qresource prefix="/txt">
+        <file>about.txt</file>
+    </qresource>
+    <qresource prefix="/resources">
+        <file>resources/baby_btn_handle.png</file>
+        <file>resources/styles.txt</file>
+        <file>resources/checkbox_off.png</file>
+        <file>resources/checkbox_on.png</file>
+        <file>resources/bevel_h.png</file>
+        <file>resources/top_panel_tile.png</file>
+        <file>resources/splash.svg</file>
+        <file>resources/main_screen_bgr.png</file>
+        <file>resources/stopwatch.png</file>
+    </qresource>
+    <qresource prefix="/qml">
+        <file>qml/BabyFeedSymbian/BabyPage.qml</file>
+        <file>qml/BabyFeedSymbian/BabyPages.qml</file>
+        <file>qml/BabyFeedSymbian/CheckInOutPage.qml</file>
+        <file>qml/BabyFeedSymbian/Main.qml</file>
+        <file>qml/BabyFeedSymbian/MainPage.qml</file>
+        <file>qml/BabyFeedSymbian/ManualEventPage.qml</file>
+        <file>qml/BabyFeedSymbian/PageTitle.qml</file>
+        <file>qml/BabyFeedSymbian/ReportsPage.qml</file>
+        <file>qml/BabyFeedSymbian/Splash.qml</file>
+        <file>qml/BabyFeedSymbian/Styles.qml</file>
+        <file>qml/BabyFeedSymbian/MyToolButton.qml</file>
+        <file>qml/BabyFeedSymbian/EventButton.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="checkboxes.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.02"
+     inkscape:cx="357.93579"
+     inkscape:cy="361.42543"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="749"
+     inkscape:window-x="0"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:1.00199997000000000;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2383"
+       width="157.14285"
+       height="180"
+       x="157.14285"
+       y="289.50504"
+       inkscape:export-filename="D:\Projectos\BabyFeed\src\BabyFeed\resources\checkbox_on.png"
+       inkscape:export-xdpi="17.405336"
+       inkscape:export-ydpi="17.405336" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.97899999999999998;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stroke-linejoin:bevel"
+       id="rect2453"
+       width="152.26418"
+       height="175.12131"
+       x="158.68892"
+       y="291.31931"
+       inkscape:export-filename="D:\Projectos\BabyFeed\src\BabyFeed\resources\checkbox_on.png"
+       inkscape:export-xdpi="17.405336"
+       inkscape:export-ydpi="17.405336" />
+    <rect
+       style="fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:1.60001314;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3255"
+       width="400.68796"
+       height="180"
+       x="151.98769"
+       y="522.96967"
+       inkscape:export-filename="D:\Projectos\BabyFeed\src\BabyFeed\resources\checkbox_off.png"
+       inkscape:export-xdpi="16.905895"
+       inkscape:export-ydpi="16.905895" />
+    <rect
+       style="fill:#e5e5ff;fill-opacity:1;stroke:none;stroke-width:0.97899997000000005;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3257"
+       width="394.13046"
+       height="175.12131"
+       x="152.98868"
+       y="524.78394"
+       inkscape:export-filename="D:\Projectos\BabyFeed\src\BabyFeed\resources\checkbox_off.png"
+       inkscape:export-xdpi="16.905895"
+       inkscape:export-ydpi="16.905895" />
+    <rect
+       style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.97899997000000005;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3174"
+       width="194.11765"
+       height="170.58824"
+       x="156.86275"
+       y="527.85242" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.97899997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3186"
+       width="189.21568"
+       height="165.68628"
+       x="161.80392"
+       y="531.77386" />
+    <rect
+       style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.97899997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3176"
+       width="186.27451"
+       height="162.7451"
+       x="159.80391"
+       y="530.79358" />
+    <g
+       id="g3199"
+       transform="matrix(0.7455541,0,0,0.7455541,-44.010626,322.95848)"
+       style="fill:#800000">
+      <path
+         d="M 331.78266,471.68097 C 335.05333,466.69423 337.62008,461.29019 340.93548,456.32304 C 342.38912,454.14519 343.94205,452.03528 345.44534,449.89141 C 356.74924,433.69569 367.22705,416.94185 377.98451,400.38184 C 384.26363,390.68074 391.15964,381.39202 397.33463,371.62184 C 399.90597,367.55342 401.93135,363.99344 404.34281,359.85212 C 407.02287,355.26738 409.39183,350.45299 412.52668,346.14461 C 413.39477,344.95156 414.28645,343.76421 415.3183,342.7096 C 435.17702,322.4128 429.05469,327.35165 439.79824,319.04688 C 443.61255,316.5095 447.58152,314.21463 451.22712,311.43538 L 434.14953,334.06478 C 430.68975,336.18732 427.07202,338.06459 423.82832,340.52726 C 415.48375,347.47422 419.50975,344.28209 436.4055,327.18981 C 437.49888,326.08372 434.17343,329.36458 433.18017,330.5614 C 429.50588,334.9887 426.69498,340.11598 423.73461,345.01482 C 422.14537,347.62482 417.70264,354.96001 416.11499,357.40265 C 409.50856,367.56685 401.9733,377.08615 395.31958,387.2181 C 385.02886,403.21633 374.67275,419.17511 364.65744,435.34798 C 363.75257,436.78549 359.63313,443.23915 358.60039,445.17985 C 357.37662,447.47956 356.83658,449.1095 355.99511,451.46271 C 355.80843,451.98479 355.68118,452.53067 355.44628,453.0329 C 355.33274,453.27565 355.12272,453.4602 354.96094,453.67385 L 331.78266,471.68097 z"
+         id="path3190"
+         style="fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.97899997000000005;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <g
+         transform="translate(5.8823529,-5.8823529)"
+         id="g3196"
+         style="fill:#800000">
+        <path
+           style="fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.97899997000000005;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path3194"
+           d="M 365.09756,315.83509 C 364.85725,317.40882 364.70616,317.90083 364.93899,319.76548 C 365.09628,321.02521 365.42715,322.25721 365.68608,323.50004 C 367.26745,331.09063 369.43377,338.43947 371.64166,345.87007 C 375.43255,359.56599 378.41157,373.48482 383.78284,386.68931 C 387.29961,395.3348 389.00131,398.17472 393.28815,406.49244 C 399.41344,416.80719 405.42085,427.50002 413.97959,436.0577 C 418.24168,440.31926 419.09759,440.56813 423.96181,443.84676 C 429.3148,447.06346 435.13623,449.12478 441.16122,450.6145 L 422.98955,470.53629 C 417.30741,468.05098 411.7653,465.26778 406.67815,461.68362 C 402.08612,458.11139 400.65576,457.40258 396.88787,452.7638 C 389.07453,443.14453 384.52507,431.31159 378.00676,420.87862 C 373.79804,413.01731 371.53467,409.27102 368.14193,401.02987 C 362.8104,388.07932 359.84414,374.31775 354.78757,361.26924 C 353.71669,358.60735 352.71398,355.917 351.57492,353.28357 C 348.87357,347.03825 345.35642,341.19913 342.74558,334.92549 L 365.09756,315.83509 z" />
+      </g>
+    </g>
+    <rect
+       style="fill:#999999;fill-opacity:1;stroke:#000000;stroke-width:1.60001314;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3204"
+       width="400.68796"
+       height="180"
+       x="154.55798"
+       y="759.42102"
+       inkscape:export-filename="D:\Projectos\BabyFeed\src\BabyFeed\resources\checkbox_off.png"
+       inkscape:export-xdpi="16.905895"
+       inkscape:export-ydpi="16.905895" />
+    <rect
+       style="fill:#e5e5ff;fill-opacity:1;stroke:none;stroke-width:0.97899997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3206"
+       width="394.13046"
+       height="175.12131"
+       x="155.55896"
+       y="761.23529"
+       inkscape:export-filename="D:\Projectos\BabyFeed\src\BabyFeed\resources\checkbox_off.png"
+       inkscape:export-xdpi="16.905895"
+       inkscape:export-ydpi="16.905895" />
+    <rect
+       style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.97899997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3208"
+       width="194.11765"
+       height="170.58824"
+       x="351.43304"
+       y="764.30377" />
+    <rect
+       style="fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.97899997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3210"
+       width="189.21568"
+       height="165.68628"
+       x="356.37421"
+       y="768.22522" />
+    <rect
+       style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.97899997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3212"
+       width="186.27451"
+       height="162.7451"
+       x="354.37421"
+       y="767.24493" />
+    <path
+       style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.97899997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3253"
+       d="M 405.29263,842.58626 C 405.51895,843.85188 406.75195,845.5846 407.35753,846.53467 C 409.71373,850.23114 412.52275,853.37433 415.46846,856.60839 C 423.13322,864.89748 430.75026,873.22352 439.12921,880.8018 C 441.9669,883.09081 445.4258,886.59564 449.22092,887.26085 C 449.7015,887.34509 450.19623,887.29209 450.68389,887.30772 C 451.14158,887.04167 451.6413,886.83742 452.05698,886.50959 C 452.08628,886.48649 461.75542,877.23971 456.33787,882.43414 C 453.54177,885.11506 451.32912,888.5918 447.93885,890.46574 C 445.74847,891.67643 451.07882,886.56458 452.54051,884.53307 C 454.14186,882.30744 455.59518,879.97894 457.12252,877.70188 C 464.89393,864.49964 471.47146,850.5779 477.26854,836.40302 C 480.00505,829.71174 482.46517,822.80409 484.94828,816.01264 C 487.79596,807.48181 490.60776,798.93869 493.39883,790.38913 L 507.79156,779.04398 C 503.08455,788.68585 498.64255,798.45677 494.58272,808.39067 C 489.30746,820.91593 491.06108,816.65143 485.73186,829.73568 C 480.36277,842.91786 475.1383,856.18803 468.70304,868.89993 C 468.00767,870.04414 462.55745,879.19316 461.31356,880.60194 C 456.39034,886.17781 451.07684,891.39697 445.8949,896.73322 C 444.51463,898.1546 441.88604,900.8167 439.8703,901.73145 C 439.19786,902.03661 438.41427,901.97864 437.68626,902.10224 C 437.09286,901.96579 436.48021,901.8956 435.90606,901.69291 C 431.87093,900.26834 429.43954,896.12849 426.76887,893.10203 C 419.62038,884.39046 412.43697,875.61904 403.62243,868.50435 C 400.24971,865.67499 399.45387,865.09416 396.38326,862.21289 C 395.5429,861.42436 394.77392,860.56046 393.91467,859.79255 C 392.63199,858.64621 391.13931,857.79878 389.89732,856.61629 L 405.29263,842.58626 z"
+       inkscape:export-filename="D:\Projectos\BabyFeed\src\BabyFeed\resources\checkbox_on.png"
+       inkscape:export-xdpi="17.405336"
+       inkscape:export-ydpi="17.405336" />
+  </g>
+</svg>

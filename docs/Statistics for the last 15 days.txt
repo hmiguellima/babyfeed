@@ -1,0 +1,17 @@
+Statistics for the last 15 days:
+
+Total feeds:
+- Left
+- Right
+- Bottle
+
+Average feed time:
+- Left
+- Right
+- Bottle
+
+Max. Interval between feeds
+
+Total diaper changes
+
+

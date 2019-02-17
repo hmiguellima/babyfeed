@@ -1,0 +1,7 @@
+videos
+marketing
+*build*
+*.o
+Bin
+obj
+moc

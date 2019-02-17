@@ -1,0 +1,37 @@
+BabyFeed - Baby agenda
+
+BabyFeed is a mobile application to help you keep track of the daily activities of your babies, 
+helping with remembering the time to feed, or give medicine or even notify other people 
+when some event occurs.
+
+Features:
+- Keep track of up to ten babies
+- Register feedings, medicines and diapper changes
+- Identify each baby with a photo taken from the phone's camera
+- Integrated with the phone's alarm system
+- Automatically send sms notifications to other people
+- Feeding statistics charts
+- Streamlined interface, with theme support
+- Backup and restore, alows you to keep you data safe or transfer to other phone
+- Online help
+- Multilingual (English, French, Spanish and Portuguese)
+
+For a demo video of BabyFeed go to 'www.hlimasoft.com/babyfeed'.
+
+BabyFeed - Agenda do bébé
+
+BabyFeed é uma aplicação para o seu Nokia que permite manter o registo das actividades diárias dos seus bébés,
+ajudando a lembrar-se das horas de alimentação, ou quando dar um medicamento e até notificar outras pessoas quando
+algum evento acontece.
+
+Funcionalidades:
+- Mantêm registo de até 10 bébés.
+- Regista alimentações, medicamentos, e mudas de fraldas.
+- Interligado com o alarme do telefone.
+- Envia notificações por SMS
+- Gráficos de tempos de alimentação
+- Cópia e restauro de dados para PC/Cartão.
+- Ajuda online
+- Traduzido em Inglês, Francês, Espanhol e Portugues.
+
+Para um video demostrativo desloque-se a 'www.hlimasoft.com/babyfeed'.
